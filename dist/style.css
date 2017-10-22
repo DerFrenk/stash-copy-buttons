@@ -1,0 +1,35 @@
+.jstree-leaf {
+	position: relative;
+}
+
+.scb-Link {
+	width: 1rem !important;
+	height: 1rem !important;
+	cursor: pointer !important;
+	color: #222 !important;
+	transition: color 0.2s !important;
+}
+
+.scb-Link--active {
+	color: green !important;
+}
+
+.scb-Link--absoluteLeft {
+	position: absolute !important;
+	top: 0 !important;
+	left: -1rem !important;
+}
+
+.scb-Link svg {
+	width: inherit !important;
+	height: inherit !important;
+}
+
+.scb-HiddenInput {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+	width: 0;
+	height: 0;
+}

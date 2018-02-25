@@ -3,16 +3,17 @@
 
   "name": "Stash Copy Buttons",
   "description": "This extension adds shortcuts to Stash for copying branch names and file paths.",
-  "version": "1.0",
+  "version": "1.1",
 
   "permissions": [
     "clipboardWrite",
-    "https://stash.maxserv.com/"
+    "https://stash.maxserv.com/",
+    "https://jira.maxserv.com/"
   ],
 
   "content_scripts": [
     {
-      "matches": ["https://stash.maxserv.com/*"],
+      "matches": ["https://stash.maxserv.com/*", "https://jira.maxserv.com/*"],
       "js": ["dist/app.js"],
       "css": ["dist/style.css"],
       "run_at": "document_end"

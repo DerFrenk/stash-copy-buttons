@@ -8,7 +8,7 @@ window.setInterval(_ => {
 
         document.querySelectorAll('#devstatus-branch-detail-dialog .branch-link').forEach(item => {
             const link = createCopyLink();
-            item.after(link);
+            item.before(link);
 
             link.addEventListener('click', _ => {
                 copyToClipboard(link, `git fetch && git checkout ${item.innerText} && git pull`);

@@ -10,6 +10,7 @@ window.setInterval(_ => {
 
         breadcrumbs.forEach(crumb => {
             const link = createCopyLink();
+            link.classList.add(linkClassName + '--baseline');
             crumb.prepend(link);
 
             crumb.setAttribute(dataAttribute, true);

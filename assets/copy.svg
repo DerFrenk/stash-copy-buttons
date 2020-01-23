@@ -1,6 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-	<g fill="currentColor">
-		<path fill="currentColor" d="M235.7 116a16 16 0 0 0-2.3 0H92a16 16 0 0 0-16 16v328a16 16 0 0 0 16 16h248a16 16 0 0 0 16-16V238.8a16 16 0 0 0-6-15.2L248.4 122a16 16 0 0 0-12.8-6zM108 148h112v85.6a16 16 0 0 0 4.5 14 16 16 0 0 0 .4.3 16 16 0 0 0 13 4h86v192H108V148zm144 23l49.3 49.3H252V171z" overflow="visible"/>
-		<path opacity="0.75" d="M315.7 36H172c-4.3 0-8.5 2-11.4 4.8-3 3-4.7 7-4.7 11.3v44h32V68h112v65.5l38 38.5h66v192h-28v32h44c4 0 8-1.2 11-4.2s4.6-7 4.6-11.3V158.8c.3-5.7-2-11.8-6-15.3L328 42c-3-3.8-8-6.2-12.8-6zM332 90.7l49.3 49.3H332z" style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Sans" overflow="visible"/>
-	</g>
+	<path fill="currentColor" d="M235.7 116a16 16 0 0 0-2.3 0H92a16 16 0 0 0-16 16v328a16 16 0 0 0 16 16h248a16 16 0 0 0 16-16V238.8a16 16 0 0 0-6-15.2L248.4 122a16 16 0 0 0-12.8-6zM108 148h112v85.6a16 16 0 0 0 4.5 14 16 16 0 0 0 .4.3 16 16 0 0 0 13 4h86v192H108V148zm144 23l49.3 49.3H252V171z"/>
+	<path fill="currentColor" opacity="0.75" d="M315.7 36H172c-4.3 0-8.5 2-11.4 4.8-3 3-4.7 7-4.7 11.3v44h32V68h112v65.5l38 38.5h66v192h-28v32h44c4 0 8-1.2 11-4.2s4.6-7 4.6-11.3V158.8c.3-5.7-2-11.8-6-15.3L328 42c-3-3.8-8-6.2-12.8-6zM332 90.7l49.3 49.3H332z"/>
 </svg>

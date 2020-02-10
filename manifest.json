@@ -3,7 +3,12 @@
 
   "name": "Stash Copy Buttons",
   "description": "This extension adds shortcuts to Stash for copying branch names and file paths.",
-  "version": "1.2",
+  "version": "1.3",
+
+  "icons": {
+    "48": "assets/copy-48.png",
+    "96": "assets/copy-96.png"
+  },
 
   "permissions": [
     "clipboardWrite",

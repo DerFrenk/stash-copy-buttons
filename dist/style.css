@@ -25,10 +25,15 @@
 	height: inherit !important;
 }
 
+.scb-Link--baseline svg {
+	position: relative !important;
+	top: 0.125rem !important;
+}
+
 .scb-HiddenInput {
 	position: fixed;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	z-index: -1;
 	width: 0;
 	height: 0;

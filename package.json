@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack -p && web-ext build  --overwrite-dest --ignore-files .git/ .idea/ lib/ node_modules/ types/ .gitignore index.js LICENSE package.json package-lock.json README.md webpack.config.js",
     "watch": "webpack --watch",
-    "firefox:build": "npm run build && web-ext build  --overwrite-dest --ignore-files .git/ .idea/ lib/ node_modules/ types/ .gitignore index.js LICENSE package.json package-lock.json README.md webpack.config.js",
     "firefox:start": "web-ext run --firefox"
   },
   "repository": {

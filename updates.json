@@ -1,0 +1,12 @@
+{
+    "addons": {
+        "{489f6f4d-7b18-4195-8f4e-aeb747669ffa}": {
+            "updates": [
+                {
+                    "version": "1.4.0",
+                    "update_link": "https://raw.githubusercontent.com/DerFrenk/stash-copy-buttons/master/artifacts/stash_copy_buttons-1.4.0-an+fx.xpi"
+                }
+            ]
+        }
+    }
+}

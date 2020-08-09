@@ -1,6 +1,8 @@
 import {copyToClipboard} from '../lib/copyToClipboard';
 import {linkClassName, createCopyLink} from '../lib/createCopyLink'
 
+// Branch dropdown in commit view
+
 const dropdown = document.querySelector('#repository-layout-revision-selector');
 const branchActionsButton = document.querySelector('#branch-actions');
 

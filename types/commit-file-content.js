@@ -1,6 +1,8 @@
 import {copyToClipboard} from '../lib/copyToClipboard';
 import {linkClassName, createCopyLink} from '../lib/createCopyLink';
 
+// jira branch popup
+
 window.setInterval(_ => {
     const branchPopup = document.querySelector('#devstatus-branch-detail-dialog');
 

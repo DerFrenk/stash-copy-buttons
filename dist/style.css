@@ -1,12 +1,9 @@
-.jstree-leaf {
-	position: relative;
-}
-
 .scb-Link {
 	width: 1rem !important;
 	height: 1rem !important;
 	cursor: pointer !important;
 	color: #222 !important;
+	background-color: transparent !important;
 	transition: color 0.2s !important;
 }
 
@@ -14,15 +11,13 @@
 	color: green !important;
 }
 
-.scb-Link--absoluteLeft {
-	position: absolute !important;
-	top: 0 !important;
-	left: -1rem !important;
-}
-
 .scb-Link svg {
 	width: inherit !important;
 	height: inherit !important;
+}
+
+.scb-Link--baseline {
+	margin-right: 0.25rem;
 }
 
 .scb-Link--baseline svg {

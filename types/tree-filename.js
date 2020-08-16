@@ -4,7 +4,7 @@ import waitForElement from '../lib/waitForElement';
 
 // File tree in pull request
 
-waitForElement('.changes-tree', () => {
+waitForElement('.changes-tree .root-directory', () => {
     document.querySelectorAll('.files .file > a').forEach(file => {
         const link = createCopyLink();
         link.classList.add(linkClassName + '--baseline');

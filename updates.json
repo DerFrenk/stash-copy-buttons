@@ -21,6 +21,10 @@
                 {
                     "version": "1.5.2",
                     "update_link": "https://raw.githubusercontent.com/DerFrenk/stash-copy-buttons/master/artifacts/stash_copy_buttons-1.5.2-an+fx.xpi"
+                },
+                {
+                    "version": "1.5.3",
+                    "update_link": "https://raw.githubusercontent.com/DerFrenk/stash-copy-buttons/master/artifacts/stash_copy_buttons-1.5.3-an+fx.xpi"
                 }
             ]
         }

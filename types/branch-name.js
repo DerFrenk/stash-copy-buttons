@@ -5,7 +5,7 @@ import waitForElement from '../lib/waitForElement';
 // branch name in Pull Request
 
 waitForElement('.pull-request-header-bar', () => {
-    const branchNames = document.querySelectorAll('.branch-lozenge-content');
+    const branchNames = document.querySelectorAll('.ref-lozenge-content');
 
     branchNames.forEach(branch => {
         const link = createCopyLink();

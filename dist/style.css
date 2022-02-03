@@ -17,12 +17,16 @@
 }
 
 .scb-Link--baseline {
-	margin-right: 0.25rem;
+	margin-right: 0.25rem !important;
 }
 
 .scb-Link--baseline svg {
 	position: relative !important;
 	top: 0.125rem !important;
+}
+
+.scb-Link--baseline + .jstree-icon {
+	display: none !important;
 }
 
 .scb-HiddenInput {

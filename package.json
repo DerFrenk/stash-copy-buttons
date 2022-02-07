@@ -21,8 +21,7 @@
         "babel-loader": "^7.1.1",
         "babel-preset-es2015": "^6.24.1",
         "raw-loader": "^0.5.1",
-        "web-ext": "^4.1.0",
+        "web-ext": "^6.6.0",
         "webpack": "^3.3.0"
     }
 }
-

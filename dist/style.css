@@ -1,3 +1,8 @@
+.scb-Link-wrapper {
+	display: inline-block !important;
+	margin-left: 0.625rem !important;
+}
+
 .scb-Link {
 	width: 1rem !important;
 	height: 1rem !important;
@@ -27,6 +32,15 @@
 
 .scb-Link--baseline + .jstree-icon {
 	display: none !important;
+}
+
+.scb-Link--fullHeight {
+	display: inline-block !important;
+	height: 100% !important;
+}
+
+.scb-Link--inline {
+	margin-left: 0.25rem !important;
 }
 
 .scb-HiddenInput {

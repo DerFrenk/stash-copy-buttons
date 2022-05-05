@@ -1,5 +1,5 @@
-const context = require.context('./types', false, /\.js$/);
+const context = require.context("./types", false, /\.js$/);
 
-context.keys().forEach(key => {
+context.keys().forEach((key) => {
     context(key);
 });

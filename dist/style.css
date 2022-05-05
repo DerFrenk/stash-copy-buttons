@@ -1,53 +1,53 @@
 .scb-Link-wrapper {
-	display: inline-block !important;
-	margin-left: 0.625rem !important;
+    display: inline-block !important;
+    margin-left: 0.625rem !important;
 }
 
 .scb-Link {
-	width: 1rem !important;
-	height: 1rem !important;
-	cursor: pointer !important;
-	color: #222 !important;
-	background-color: transparent !important;
-	transition: color 0.2s !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    cursor: pointer !important;
+    color: #222 !important;
+    background-color: transparent !important;
+    transition: color 0.2s !important;
 }
 
 .scb-Link--active {
-	color: green !important;
+    color: green !important;
 }
 
 .scb-Link svg {
-	width: inherit !important;
-	height: inherit !important;
+    width: inherit !important;
+    height: inherit !important;
 }
 
 .scb-Link--baseline {
-	margin-right: 0.25rem !important;
+    margin-right: 0.25rem !important;
 }
 
 .scb-Link--baseline svg {
-	position: relative !important;
-	top: 0.125rem !important;
+    position: relative !important;
+    top: 0.125rem !important;
 }
 
 .scb-Link--baseline + .jstree-icon {
-	display: none !important;
+    display: none !important;
 }
 
 .scb-Link--fullHeight {
-	display: inline-block !important;
-	height: 100% !important;
+    display: inline-block !important;
+    height: 100% !important;
 }
 
 .scb-Link--inline {
-	margin-left: 0.25rem !important;
+    margin-left: 0.25rem !important;
 }
 
 .scb-HiddenInput {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 0;
-	height: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
 }

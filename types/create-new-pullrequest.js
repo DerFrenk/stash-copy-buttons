@@ -29,30 +29,17 @@ waitForElement("#commit-file-content .breadcrumbs", () => {
     });
 });
 
-waitForElement("#branch-compare .revision-reference-selector-trigger", () => {
-    document.querySelectorAll("#branch-compare .revision-reference-selector-trigger").forEach((button) => {
-        const link = createCopyLink();
-        link.classList.add("aui-icon");
-
-        const linkWrapper = document.createElement("div");
-        linkWrapper.classList.add(linkClassName + "-wrapper");
-        linkWrapper.appendChild(link);
-        button.after(linkWrapper);
-
-        link.addEventListener("click", () => {
-            copyToClipboard(link, `git fetch && git checkout ${button.title} && git pull`);
-        });
-    });
-});
-
-waitForElement("#branch-compare .branch .name", () => {
-    document.querySelectorAll("#branch-compare .branch .name").forEach((item) => {
+waitForElement(".selector-toggle-button", () => {
+    document.querySelectorAll(".selector-toggle-button").forEach((button) => {
         const link = createCopyLink();
         link.classList.add(linkClassName + "--inline");
-        item.after(link);
+        button.after(link);
+
+        button.style.width = "calc(100% - 30px)";
 
         link.addEventListener("click", () => {
-            copyToClipboard(link, `git fetch && git checkout ${item.innerHTML} && git pull`);
+            const branchName = button.querySelector(".selector-toggle-button-content").innerText;
+            copyToClipboard(link, `git fetch && git checkout ${branchName} && git pull`);
         });
     });
 });

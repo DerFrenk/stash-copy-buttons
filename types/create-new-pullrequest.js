@@ -1,6 +1,7 @@
 import waitForElement from "../lib/waitForElement";
 import { createCopyLink, linkClassName } from "../lib/createCopyLink";
 import { copyToClipboard } from "../lib/copyToClipboard";
+import { createCheckoutCommand } from "../lib/createCheckoutCommand";
 
 // File tree. Of cours this filetree uses different selectors than the one in the final pull request...
 waitForElement(".file-tree-wrapper .difftree-file", () => {
@@ -39,7 +40,7 @@ waitForElement(".selector-toggle-button", () => {
 
         link.addEventListener("click", () => {
             const branchName = button.querySelector(".selector-toggle-button-content").innerText;
-            copyToClipboard(link, `git fetch && git checkout ${branchName} && git pull`);
+            copyToClipboard(link, createCheckoutCommand(branchName));
         });
     });
 });

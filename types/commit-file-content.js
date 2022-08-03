@@ -1,5 +1,6 @@
 import { copyToClipboard } from "../lib/copyToClipboard";
 import { linkClassName, createCopyLink } from "../lib/createCopyLink";
+import { createCheckoutCommand } from "../lib/createCheckoutCommand";
 
 // jira branch popup
 
@@ -13,7 +14,7 @@ window.setInterval(() => {
             item.before(link);
 
             link.addEventListener("click", (_) => {
-                copyToClipboard(link, `git fetch && git checkout ${item.innerText} && git pull`);
+                copyToClipboard(link, createCheckoutCommand(item.innerText));
             });
         });
     }

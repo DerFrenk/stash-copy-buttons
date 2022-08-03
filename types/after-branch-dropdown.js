@@ -1,5 +1,6 @@
 import { copyToClipboard } from "../lib/copyToClipboard";
 import { createCopyLink, linkClassName } from "../lib/createCopyLink";
+import { createCheckoutCommand } from "../lib/createCheckoutCommand";
 
 // Branch dropdown in commit view
 
@@ -17,6 +18,6 @@ if (dropdown !== null && branchActionsButton !== null) {
     branchActionsButton.after(linkWrapper);
 
     link.addEventListener("click", (_) => {
-        copyToClipboard(link, `git fetch && git checkout ${dropdown.title} && git pull`);
+        copyToClipboard(link, createCheckoutCommand(dropdown.title));
     });
 }

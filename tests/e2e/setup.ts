@@ -1,12 +1,18 @@
+import { existsSync } from "fs";
 import { chromium, FullConfig } from "@playwright/test";
 import loginIfNecessary from "../helpers/loginIfNecessary";
 require("dotenv").config();
 
 export default async function globalSetup(config: FullConfig) {
+    let contextOptions = {};
+    if (existsSync(process.env.STATEFILE)) {
+        contextOptions = { storageState: process.env.STATEFILE };
+    }
+
     const browser = await chromium.launch({ headless: false });
-    const context = await browser.newContext({ storageState: process.env.STATEFILE });
+    const context = await browser.newContext(contextOptions);
     const page = await context.newPage();
-    await page.goto(`${process.env.DOMAIN}/`);
+    await page.goto(`${process.env.DOMAIN}/users/frank/repos/stash-copy-buttons-e2e/`);
     await loginIfNecessary(page);
 
     await page.goto(`${process.env.DOMAIN}/users/frank/repos/stash-copy-buttons-e2e/pull-requests?create`);

@@ -9,8 +9,8 @@
     "watch": "webpack --watch",
     "chrome:start": "web-ext run --target chromium",
     "firefox:start": "web-ext run --firefox",
-    "test": "npx playwright test",
-    "testandreport": "npx playwright test && npx playwright show-report"
+    "test": "DATA=$(op item get JiraMaxServ --fields label=username,label=password --format json) npx playwright test",
+    "testandreport": "DATA=$(op item get JiraMaxServ --fields label=username,label=password --format json) npx playwright test && npx playwright show-report"
   },
   "repository": {
     "type": "git",

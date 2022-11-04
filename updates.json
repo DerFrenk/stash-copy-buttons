@@ -37,6 +37,10 @@
                 {
                     "version": "1.8.0",
                     "update_link": "https://raw.githubusercontent.com/DerFrenk/stash-copy-buttons/master/artifacts/26ef20738e944938b388-1.8.0.xpi"
+                },
+                {
+                    "version": "1.8.1",
+                    "update_link": "https://raw.githubusercontent.com/DerFrenk/stash-copy-buttons/master/artifacts/26ef20738e944938b388-1.8.1.xpi"
                 }
             ]
         }

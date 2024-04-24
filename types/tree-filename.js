@@ -11,7 +11,8 @@ waitForElement(".changes-tree .root-directory", () => {
         file.parentNode.prepend(link);
 
         link.addEventListener("click", (_) => {
-            copyToClipboard(link, file.getAttribute("href").substring(1));
+            const path = decodeURIComponent(file.getAttribute("href").substring(1));
+            copyToClipboard(link, path);
         });
     });
 });

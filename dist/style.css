@@ -7,7 +7,7 @@
     width: 1rem !important;
     height: 1rem !important;
     cursor: pointer !important;
-    color: #222 !important;
+    color: var(--ds-text, #42526E) !important;
     background-color: transparent !important;
     transition: color 0.2s !important;
 }

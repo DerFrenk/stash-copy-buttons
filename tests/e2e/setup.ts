@@ -24,9 +24,8 @@ export default async function globalSetup(config: FullConfig) {
     // Add a comment
     await page.click('[data-testid="tab-DIFF"] a');
     await page.click('[data-testid="diff-comment-trigger"]');
-    await page.evaluate(() => {
-        document.execCommand("insertText", false, "Yolo");
-    });
+    await page.click(".CodeMirror-code");
+    await page.keyboard.type("Yolo");
     await page.click('[data-testid="comment-editor-submit-button"]', { delay: 500 });
 
     await page.context().storageState({ path: process.env.STATEFILE });

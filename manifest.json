@@ -9,14 +9,12 @@
     },
     "permissions": [
         "clipboardWrite",
-        "https://stash.maxserv.com/",
-        "https://jira.maxserv.com/"
+        "https://stash.maxserv.com/"
     ],
     "content_scripts": [
         {
             "matches": [
-                "https://stash.maxserv.com/*",
-                "https://jira.maxserv.com/*"
+                "https://stash.maxserv.com/*"
             ],
             "js": [
                 "dist/app.js"

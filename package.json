@@ -9,9 +9,9 @@
     "sign": "webpack && web-ext sign",
     "chrome:start": "web-ext run --target chromium",
     "firefox:start": "web-ext run --firefox",
-    "buildAndSign": "webpack && web-ext build && web-ext sign --api-key $(op item get WebExtSignInfo --fields label=username) --api-secret $(op item get WebExtSignInfo --fields label=password) && git add ./artifacts/*",
-    "test": "DATA=$(op item get JiraMaxServ --fields label=username,label=password --format json) npx playwright test",
-    "testandreport": "DATA=$(op item get JiraMaxServ --fields label=username,label=password --format json) npx playwright test && npx playwright show-report"
+    "buildAndSign": "webpack && web-ext build && web-ext sign --api-key $(op item get WebExtSignInfo --account my.1password.com --fields label=username) --api-secret $(op item get WebExtSignInfo --account my.1password.com --fields label=password) && git add ./artifacts/*",
+    "test": "DATA=$(op item get JiraMaxServ --account maxserv.1password.eu --fields label=username,label=password --format json) npx playwright test",
+    "testandreport": "DATA=$(op item get JiraMaxServ --account maxserv.1password.eu --fields label=username,label=password --format json) npx playwright test && npx playwright show-report"
   },
   "repository": {
     "type": "git",

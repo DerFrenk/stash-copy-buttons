@@ -13,7 +13,7 @@ module.exports = {
         "package.json",
         "package-lock.json",
         "README.md",
-        "web-ext-config.js",
+        "web-ext-config.cjs",
         "webpack.config.js",
     ],
     build: {

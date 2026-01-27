@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "NODE_ENV=development webpack --watch",
     "build": "webpack && web-ext build",
     "sign": "webpack && web-ext sign",
-    "watch": "NODE_ENV=development webpack --watch",
     "chrome:start": "web-ext run --target chromium",
     "firefox:start": "web-ext run --firefox",
+    "buildAndSign": "webpack && web-ext build && web-ext sign --api-key $(op item get WebExtSignInfo --fields label=username) --api-secret $(op item get WebExtSignInfo --fields label=password) && git add ./artifacts/*",
     "test": "DATA=$(op item get JiraMaxServ --fields label=username,label=password --format json) npx playwright test",
     "testandreport": "DATA=$(op item get JiraMaxServ --fields label=username,label=password --format json) npx playwright test && npx playwright show-report"
   },

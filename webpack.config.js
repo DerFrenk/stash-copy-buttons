@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
     entry: "./index.js",
     mode: process.env.NODE_ENV ?? "production",
+    devtool: "source-map",
     output: {
         filename: "app.js",
         path: path.resolve(__dirname, "dist"),
